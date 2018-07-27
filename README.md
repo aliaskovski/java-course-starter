@@ -43,6 +43,28 @@ java -version
 javac
 
 ```
+На Linux машинах: 
+### Ubuntu
+Открыть терминал можно при помощи Ctrl+Alt+T
+В терминале
+```java -version
+```
+ Если ее нет, то установить (в зависимости от дистрибутива) ее можно при помощи: 
+ ```
+#Update repository:
+
+sudo add-apt-repository ppa:openjdk-r/ppa  # только для Ubuntu 17.4 и меньше
+sudo apt-get update
+
+sudo apt-get install openjdk-8-jdk
+ ```
+ ### CentOS
+```
+sudo yum update -y
+sudo yum install java-1.7.0-openjdk-devel
+```
+
+
 
 Если Java не установлена у тебя на машине, то ее нужно скачать тут:
 http://www.oracle.com/technetwork/java/javase/downloads/jdk10-downloads-4416644.html
@@ -50,7 +72,7 @@ http://www.oracle.com/technetwork/java/javase/downloads/jdk10-downloads-4416644.
 
 ### 4. Кодить в блокноте не круто! Для этого есть IDE
 
-Для того, чтобы писать программы нужен специальный инструмент IDE:
+Для того, чтобы писать программы, нужен специальный инструмент - IDE:
 https://www.jetbrains.com/idea/download/
 
 Тебе понадобится Community Edition. 
